@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/displayScreen"
+        android:layout_width="410dp"
+        android:layout_height="180dp"
+        android:text=""
+        android:textSize="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <LinearLayout
+        android:layout_width="415dp"
+        android:layout_height="556dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayScreen">
+
+        <LinearLayout style="@style/buttonRow">
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="1" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="2" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="3" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="+" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="*" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/buttonRow">
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="4" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="5" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="6" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="-" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="/" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/buttonRow">
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="7" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="8" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="9" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="√" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/buttonRow">
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="0" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="numberAndOpsAction"
+                android:text="." />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="allClearAction"
+                android:text="AC" />
+
+            <Button
+                style="@style/numsAndOps"
+                android:onClick="calculateOp"
+                android:text="=" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
