@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
         android:id="@+id/displayScreen"
         android:layout_width="410dp"
         android:layout_height="180dp"
@@ -14,6 +14,8 @@
         android:textSize="80sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:inputType="text"
+        android:contentDescription="Input arithmethic operation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
